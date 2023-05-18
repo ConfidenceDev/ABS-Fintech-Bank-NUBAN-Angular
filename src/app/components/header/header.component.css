@@ -1,0 +1,22 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--mb-2);
+  margin-bottom: 40px;
+}
+
+.title {
+  font-size: var(--mb-6);
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+@media (max-width: 698px) {
+  nav {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}

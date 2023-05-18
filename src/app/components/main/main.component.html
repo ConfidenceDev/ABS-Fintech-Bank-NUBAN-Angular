@@ -1,0 +1,65 @@
+<section class="customer container">
+  <h1>Create Account Number</h1>
+  <div class="mid">
+    <div class="broad white_card">
+      <div class="broad_fields">
+        <form class="publish_container">
+          <input
+            type="number"
+            placeholder="Serial Number"
+            class="inputs post_serial"
+            name="post_serial"
+            maxlength="9"
+            required
+            [(ngModel)]="post_serial"
+          />
+          <input
+            type="number"
+            placeholder="Bank Code, E.g: 050"
+            class="inputs post_code"
+            name="post_code"
+            autocomplete="off"
+            maxlength="4"
+            required
+            [(ngModel)]="post_bank_code"
+          />
+        </form>
+        <p>By proceeding you agree to our <b>terms &amp; policy</b></p>
+        <button class="btn proceed_btn" (click)="onCreate()">Create</button>
+      </div>
+    </div>
+    <div class="right">
+      <div class="showcase">
+        <div class="showcase_header">
+          <h3>Details</h3>
+          <div class="broad content white_card">
+            <p>
+              NUBAN:
+              <b
+                ><label class="nuban">{{ nuban }}</label></b
+              >
+            </p>
+            <p>
+              Serial Number:
+              <b
+                ><label class="serial_number">{{ serial_num }}</label></b
+              >
+            </p>
+            <p>
+              Bank Code:
+              <b
+                ><label class="bank_code">{{ bank_cod }}</label></b
+              >
+            </p>
+            <p>
+              Bank:
+              <b
+                ><label class="bank">{{ bank }}</label></b
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

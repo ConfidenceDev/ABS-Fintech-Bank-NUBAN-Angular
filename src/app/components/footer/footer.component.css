@@ -1,0 +1,8 @@
+p {
+  font-size: var(--mb-4);
+  color: white;
+  text-align: center;
+  justify-self: center;
+  align-self: center;
+  margin-top: 40px;
+}
